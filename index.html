@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons for modern icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    
+    <div class="app-container">
+        <header>
+            <h1>Task Manager</h1>
+            <p>Stay productive and organized.</p>
+        </header>
+
+        <form id="task-form" class="task-form">
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="What do you need to do?" autocomplete="off" required>
+                <button type="submit" class="add-btn" aria-label="Add Task">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </div>
+        </form>
+
+        <div class="task-list-container">
+            <ul id="task-list" class="task-list">
+                <!-- Tasks will be injected here dynamically -->
+            </ul>
+            <div id="empty-state" class="empty-state">
+                <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                <p>All caught up! Add a task to get started.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
