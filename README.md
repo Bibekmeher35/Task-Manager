@@ -2,6 +2,8 @@
 
 A beautiful, responsive, and modern Task Manager web application built with HTML, CSS, and Vanilla JavaScript.
 
+**Live Demo:** [https://taskmanagekaro.netlify.app/](https://taskmanagekaro.netlify.app/)
+
 ## ✨ Features
 
 - **Add Tasks**: Quickly add new tasks to your to-do list.
